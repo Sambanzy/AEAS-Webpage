@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+
+  <!-- your global styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- this page’s styles -->
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <!-- header/nav -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Site Logo">
+    </div>
+
+    <!-- Hamburger menu toggle -->
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="home-link">Home</a></li>
+        <li><a href="search.html" class="search-link">Search</a></li>
+        <li><a href="contact.html" class="contact-link active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="contact-hero">
+      <h1>Let’s Build Something Together</h1>
+      <p>Questions, project inquiries, or just want to say hello? Reach out—we’re here to help.</p>
+    </section>
+
+    <!-- INFO & FORM GRID -->
+    <section class="contact-section">
+      <!-- Left column: Contact Info + Map -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <ul class="info-list">
+          <li><strong>Address:</strong> Block G5, Flat 1, Igala Estate, Lagos.</li>
+          <li>
+            <strong>Phone:</strong>
+            <a href="tel:+2347072849478">+234 707 284 9478</a>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:adekanle.oluwanifemi@gmail.com">
+              adekanle.oluwanifemi@gmail.com
+            </a>
+          </li>
+          <li><strong>Hours:</strong> Mon–Fri, 9 AM – 6 PM</li>
+        </ul>
+
+        <!-- Map Embed -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=Block+G5,+Flat+1,+Igala+Estate,+Lagos&z=15&output=embed"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Right column: Contact Form -->
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Sam Banzy" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="sambanzy@example.com" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about your vision…" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Newsletter Signup -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Stay in the Loop</h2>
+      <p>Join our newsletter for design tips, project highlights, and exclusive insights.</p>
+      <form id="newsletter-form">
+        <input
+          type="email"
+          id="newsletter-email"
+          placeholder="Your email address"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsletter-message" class="newsletter-message"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Your Website. All rights reserved.</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

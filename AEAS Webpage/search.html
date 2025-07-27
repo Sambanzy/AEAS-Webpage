@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search At Études Architectural Solutions</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/search.css" />
+</head>
+<body>
+  <!-- header/nav -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Site Logo">
+    </div>
+
+    <!-- Hamburger menu toggle -->
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html"  class="home-link">Home</a></li>
+        <li><a href="search.html" class="search-link active">Search</a></li>
+        <li><a href="contact.html" class="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="search-hero">
+      <h1>Discover Our Archive</h1>
+      <p>Browse projects, articles, and case studies.</p>
+      <div class="search-widget">
+        <input id="q" type="text" placeholder="Type keywords…" />
+        <button id="go">GO</button>
+      </div>
+    </section>
+
+    <!-- FILTER TABS (no “All”) -->
+    <section class="filter-bar">
+      <button class="filter">Renovation</button>
+      <button class="filter">Design</button>
+      <button class="filter">Sustainability</button>
+      <button class="filter">Case Study</button>
+    </section>
+
+    <!-- RESULTS GRID -->
+    <section class="results-grid">
+      <article class="card">
+        <!-- <img src="images/thumb1.jpg" alt="Project thumbnail"> -->
+        <div class="card-content">
+          <h3>Urban Loft Revamp</h3>
+          <p>Modern touches breathe new life into a 1920s warehouse.</p>
+          <span class="tag">Renovation</span>
+        </div>
+      </article>
+
+      <!-- Design -->
+      <article class="card">
+        <!-- <img src="images/thumb3.jpg" alt="Project thumbnail"> -->
+        <div class="card-content">
+          <h3>Minimalist Workspace</h3>
+          <p>Bright, functional design transforms any office into an inspiring hub.</p>
+          <span class="tag">Design</span>
+        </div>
+      </article>
+
+      <!-- Sustainability -->
+      <article class="card">
+        <!-- <img src="images/thumb2.jpg" alt="Project thumbnail"> -->
+        <div class="card-content">
+          <h3>Eco Pavilion</h3>
+          <p>Open‑air structure showcasing sustainable materials and green tech.</p>
+          <span class="tag">Sustainability</span>
+        </div>
+      </article>
+
+      <!-- Case Study -->
+      <article class="card">
+        <!-- <img src="images/thumb4.jpg" alt="Project thumbnail"> -->
+        <div class="card-content">
+          <h3>Historic Facade Case Study</h3>
+          <p>In‑depth analysis and restoration of a 19th‑century landmark building.</p>
+          <span class="tag">Case Study</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- your search JS -->
+  <script src="javascript.js"></script>
+</body>
+</html>

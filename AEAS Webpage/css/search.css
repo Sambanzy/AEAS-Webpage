@@ -1,0 +1,123 @@
+/* SEARCH2.CSS - for “Filter & Gallery” concept */
+
+/* --- Search Hero --- */
+.search-hero {
+  text-align: center;
+  padding: 80px 0 40px;
+}
+.search-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+.search-hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+.search-widget {
+  display: inline-flex;
+  max-width: 500px;
+  width: 100%;
+  border: 2px solid #f44336;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.search-widget input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+}
+.search-widget input:focus {
+  outline: none;
+}
+.search-widget button {
+  background: #f44336;
+  border: none;
+  padding: 0 25px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.search-widget button:hover {
+  background: #d32f2f;
+}
+
+/* --- Filter Bar --- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0;
+}
+.filter-bar .filter {
+  background: transparent;
+  border: 2px solid #f44336;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #f44336;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.filter-bar .filter.active,
+.filter-bar .filter:hover {
+  background: #f44336;
+  color: #fff;
+}
+
+/* --- Results Grid --- */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #222;
+}
+.card-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 12px;
+}
+.card-content .tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #f44336;
+  border: 1px solid #f44336;
+  border-radius: 4px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+}
+
+/* Removed duplicate and invalid character */
